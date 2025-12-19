@@ -11,8 +11,5 @@
   "main": "index.js",
   "files": [
     "index.js"
-  ],
-  "dependencies": {
-    "loader-utils": "1.4.2"
-  }
+  ]
 }

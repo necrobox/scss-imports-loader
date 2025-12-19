@@ -1,6 +1,4 @@
-const loaderUtils = require('loader-utils');
-
 module.exports = function (source) {
-  const { paths = [] } = loaderUtils.getOptions(this);
+  const { paths = [] } = this.getOptions();
   return paths.map(x => `@import '${x}';`).join('\n') + source;
 };

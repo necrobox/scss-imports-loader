@@ -12,9 +12,6 @@
   "files": [
     "index.js"
   ],
-  "scripts": {
-    "prepublishOnly": "if [ -z \"$CI\" ]; then lawyer; fi"
-  },
   "dependencies": {
     "loader-utils": "1.4.2"
   }

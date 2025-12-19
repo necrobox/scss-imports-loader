@@ -79,5 +79,3 @@ files once and make them to be injected everywhere.
 
 It was possible to use [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) from sass-loader,
 but the plugin way turned out to be more convenient.
-
-[![Sponsored by FunBox](https://funbox.ru/badges/sponsored_by_funbox_centered.svg)](https://funbox.ru)

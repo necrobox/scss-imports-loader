@@ -77,5 +77,3 @@ module.exports = {
 
 Можно было бы использовать [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) у sass-loader,
 но вариант с плагином оказался более удобным.
-
-[![Sponsored by FunBox](https://funbox.ru/badges/sponsored_by_funbox_centered.svg)](https://funbox.ru)

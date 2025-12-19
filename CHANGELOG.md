@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0 (19.12.2025)
+
+Moved package from @funboxteam to @necrobox scope.
+
+
 ## 2.1.2 (19.11.2022)
 
 Updated loader-utils to 1.4.2 to resolve some high severity vulnerabilities.

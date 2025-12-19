@@ -1,12 +1,12 @@
 {
-  "name": "@funboxteam/scss-imports-loader",
+  "name": "@necrobox/scss-imports-loader",
   "version": "2.1.2",
   "description": "Global imports for SCSS files",
   "license": "MIT",
   "author": "Igor Adamenko <mail@igoradamenko.com> (https://igoradamenko.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/funbox/scss-imports-loader"
+    "url": "https://github.com/necrobox/scss-imports-loader"
   },
   "main": "index.js",
   "files": [

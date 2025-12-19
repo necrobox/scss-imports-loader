@@ -1,24 +1,15 @@
-# @funboxteam/scss-imports-loader
+# @necrobox/scss-imports-loader
 
-[![npm](https://img.shields.io/npm/v/@funboxteam/scss-imports-loader.svg)](https://www.npmjs.com/package/@funboxteam/scss-imports-loader)
+[![npm](https://img.shields.io/npm/v/@necrobox/scss-imports-loader.svg)](https://www.npmjs.com/package/@necrobox/scss-imports-loader)
 
 Лоадер для Вебпака, добавляющий в обрабатываемые файлы `@import`-правила с необходимыми путями.
-
-## Мотивация
-
-При написании стилей на SCSS мы храним различные глобальные переменные и миксины в отдельных файлах. Так или иначе,
-большинство из них используется в каждом компоненте, а потому, чтобы не дублировать постоянно импорты, мы решили
-найти какой-то способ описать файлы один раз и сделать так, чтобы они подключились везде.
-
-Можно было бы использовать [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) у sass-loader,
-но вариант с плагином оказался более удобным.
 
 ## Установка
 
 Установить лоадер в проекте:
 
 ```bash
-npm install --save-dev @funboxteam/scss-imports-loader
+npm install --save-dev @necrobox/scss-imports-loader
 ```
 
 Подключить в конфиге Вебпака так, чтобы он вызывался перед sass-loader, и передать в `options.path` список необходимых 
@@ -35,7 +26,7 @@ module.exports = {
           // ...
           'sass-loader',
           {
-            loader: '@funboxteam/scss-imports-loader',
+            loader: '@necrobox/scss-imports-loader',
             options: {
               paths: [
                 'app/styles/variables/colors',
@@ -78,4 +69,11 @@ module.exports = {
 В общем случае импортируемые файлы не обязательно должны быть SCSS-файлами. 
 Достаточно того, чтобы их смог обработать тот набор лоадеров, что перечислен в конфиге Вебпака.
 
-[![Sponsored by FunBox](https://funbox.ru/badges/sponsored_by_funbox_centered.svg)](https://funbox.ru)
+## Мотивация
+
+При написании стилей на SCSS мы храним различные глобальные переменные и миксины в отдельных файлах. Так или иначе,
+большинство из них используется в каждом компоненте, а потому, чтобы не дублировать постоянно импорты, мы решили
+найти какой-то способ описать файлы один раз и сделать так, чтобы они подключились везде.
+
+Можно было бы использовать [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) у sass-loader,
+но вариант с плагином оказался более удобным.

@@ -1,26 +1,17 @@
-# @funboxteam/scss-imports-loader
+# @necrobox/scss-imports-loader
 
-[![npm](https://img.shields.io/npm/v/@funboxteam/scss-imports-loader.svg)](https://www.npmjs.com/package/@funboxteam/scss-imports-loader)
+[![npm](https://img.shields.io/npm/v/@necrobox/scss-imports-loader.svg)](https://www.npmjs.com/package/@necrobox/scss-imports-loader)
 
 Webpack loader that injects predefined `@import` rules into the processed files.
 
 [По-русски](./README.ru.md)
 
-## Rationale
-
-When we write styles using SCSS we store some global variables and mixins in the separated files. Most of them are used
-in every component, and therefore in order not to constantly duplicate imports to decided to find a way to list those
-files once and make them to be injected everywhere.
-
-It was possible to use [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) from sass-loader,
-but the plugin way turned out to be more convenient.
-
-## Getting Started
+## Getting started
 
 Install the loader in your project:
 
 ```bash
-npm install --save-dev @funboxteam/scss-imports-loader
+npm install --save-dev @necrobox/scss-imports-loader
 ```
 
 Add it into the project's Webpack config so that it is called before sass-loader, and set `options.path` to the list
@@ -37,7 +28,7 @@ module.exports = {
           // ...
           'sass-loader',
           {
-            loader: '@funboxteam/scss-imports-loader',
+            loader: '@necrobox/scss-imports-loader',
             options: {
               paths: [
                 'app/styles/variables/colors',
@@ -80,4 +71,11 @@ That means the paths in `options.path` have to be “available to resolve” by 
 In general, the imported files don't have to be SCSS files.
 It's enough that the set of loaders listed in the Webpack config can handle them.
 
-[![Sponsored by FunBox](https://funbox.ru/badges/sponsored_by_funbox_centered.svg)](https://funbox.ru)
+## Rationale
+
+When we write styles using SCSS we store some global variables and mixins in the separated files. Most of them are used
+in every component, and therefore in order not to constantly duplicate imports to decided to find a way to list those
+files once and make them to be injected everywhere.
+
+It was possible to use [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) from sass-loader,
+but the plugin way turned out to be more convenient.

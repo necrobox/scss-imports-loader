@@ -1,6 +1,6 @@
-# @funboxteam/scss-imports-loader
+# @necrobox/scss-imports-loader
 
-[![npm](https://img.shields.io/npm/v/@funboxteam/scss-imports-loader.svg)](https://www.npmjs.com/package/@funboxteam/scss-imports-loader)
+[![npm](https://img.shields.io/npm/v/@necrobox/scss-imports-loader.svg)](https://www.npmjs.com/package/@necrobox/scss-imports-loader)
 
 Лоадер для Вебпака, добавляющий в обрабатываемые файлы `@import`-правила с необходимыми путями.
 
@@ -18,7 +18,7 @@
 Установить лоадер в проекте:
 
 ```bash
-npm install --save-dev @funboxteam/scss-imports-loader
+npm install --save-dev @necrobox/scss-imports-loader
 ```
 
 Подключить в конфиге Вебпака так, чтобы он вызывался перед sass-loader, и передать в `options.path` список необходимых 
@@ -35,7 +35,7 @@ module.exports = {
           // ...
           'sass-loader',
           {
-            loader: '@funboxteam/scss-imports-loader',
+            loader: '@necrobox/scss-imports-loader',
             options: {
               paths: [
                 'app/styles/variables/colors',

@@ -1,6 +1,6 @@
-# @funboxteam/scss-imports-loader
+# @necrobox/scss-imports-loader
 
-[![npm](https://img.shields.io/npm/v/@funboxteam/scss-imports-loader.svg)](https://www.npmjs.com/package/@funboxteam/scss-imports-loader)
+[![npm](https://img.shields.io/npm/v/@necrobox/scss-imports-loader.svg)](https://www.npmjs.com/package/@necrobox/scss-imports-loader)
 
 Webpack loader that injects predefined `@import` rules into the processed files.
 
@@ -20,7 +20,7 @@ but the plugin way turned out to be more convenient.
 Install the loader in your project:
 
 ```bash
-npm install --save-dev @funboxteam/scss-imports-loader
+npm install --save-dev @necrobox/scss-imports-loader
 ```
 
 Add it into the project's Webpack config so that it is called before sass-loader, and set `options.path` to the list
@@ -37,7 +37,7 @@ module.exports = {
           // ...
           'sass-loader',
           {
-            loader: '@funboxteam/scss-imports-loader',
+            loader: '@necrobox/scss-imports-loader',
             options: {
               paths: [
                 'app/styles/variables/colors',

@@ -6,6 +6,12 @@ Webpack loader that injects predefined `@import` rules into the processed files.
 
 [По-русски](./README.ru.md)
 
+## Note
+
+This version of the loader works with webpack v5+.
+
+If you need webpack v4 support, use loader [v3.0.0](https://github.com/necrobox/scss-imports-loader/tree/3.0.0) and lower.
+
 ## Getting started
 
 Install the loader in your project:

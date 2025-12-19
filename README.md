@@ -6,16 +6,7 @@ Webpack loader that injects predefined `@import` rules into the processed files.
 
 [По-русски](./README.ru.md)
 
-## Rationale
-
-When we write styles using SCSS we store some global variables and mixins in the separated files. Most of them are used
-in every component, and therefore in order not to constantly duplicate imports to decided to find a way to list those
-files once and make them to be injected everywhere.
-
-It was possible to use [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) from sass-loader,
-but the plugin way turned out to be more convenient.
-
-## Getting Started
+## Getting started
 
 Install the loader in your project:
 
@@ -79,5 +70,14 @@ That means the paths in `options.path` have to be “available to resolve” by 
 
 In general, the imported files don't have to be SCSS files.
 It's enough that the set of loaders listed in the Webpack config can handle them.
+
+## Rationale
+
+When we write styles using SCSS we store some global variables and mixins in the separated files. Most of them are used
+in every component, and therefore in order not to constantly duplicate imports to decided to find a way to list those
+files once and make them to be injected everywhere.
+
+It was possible to use [`additionalData`](https://webpack.js.org/loaders/sass-loader/#additionaldata) from sass-loader,
+but the plugin way turned out to be more convenient.
 
 [![Sponsored by FunBox](https://funbox.ru/badges/sponsored_by_funbox_centered.svg)](https://funbox.ru)

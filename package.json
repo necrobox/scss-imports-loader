@@ -1,6 +1,6 @@
 {
   "name": "@necrobox/scss-imports-loader",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Global imports for SCSS files",
   "license": "MIT",
   "author": "Igor Adamenko <mail@igoradamenko.com> (https://igoradamenko.com)",

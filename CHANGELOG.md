@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.0 (19.12.2025)
+
+Dropped support for webpack v4 and lower. Removed all the deps.
+
+
 ## 3.0.0 (19.12.2025)
 
 Moved package from @funboxteam to @necrobox scope.
